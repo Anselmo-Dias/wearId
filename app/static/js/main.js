@@ -17,7 +17,7 @@ headerButton.addEventListener('click', () => {
 logout.addEventListener('click', () => {
   localStorage.removeItem('login')
 
-    window.location.pathname = '/login'
+    window.location.pathname = '/'
 })
 
 navigateButton.addEventListener('click', async () => {
