@@ -1,0 +1,231 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link
+      href="https://fonts
+      .googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+<title>Wear ID</title>
+</head>
+<body>
+  <header id="header" class="wrapper">
+    <button id="button-menu">
+      <img  src="{% static 'assets/icons/menu.svg' %}" alt="">
+    </button>
+    <div class="header-links-1">
+      <a href="https://lp.melhorenvio.com.br/calculadora-melhor/?utm_source=pago&utm_medium=googleads&utm_campaign=18928447166&utm_content=&utm_term=&gclid=CjwKCAjwg-GjBhBnEiwAMUvNW9ezMmEwikCDZxto_yaMyRoBKckQ-E5HwM0eo64QW6qNQ0PhpgQg1BoC7HoQAvD_BwE" target="_blank">Veja as condi&ccedil;&otilde;es do frete</a>
+      <div class="box-link">
+        <ul class="menu">
+          <li><a href="#categorys" >Home</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=+5579981057602&text=Oi! Preciso de um atendimento" target="_blank">Atendimento</a></li>
+          {% comment %} <li><a href="" target="_blank">Meus pedidos</a></li> {% endcomment %}
+        </ul>
+      </div>
+    </div>
+    <div id="search">
+      <img src="{% static 'assets/logoWearID.svg' %}" alt="" />
+      <div class="box-search">
+        <input type="text" placeholder=" O que voc&ecirc; procura? " />
+        <button>
+          <img src="{% static 'assets/icons/search.svg' %}" alt="" />
+        </button>
+      </div>
+      <div class="shopping-cart">
+        <a class="logout">logout</a>
+        <img src="{% static 'assets/cart.svg' %}" alt="" />
+      </div>
+    </div>
+    <nav id="navigate">
+      <button id="button-house">
+        <img class="close-menu" src="{% static 'assets/icons/open.svg' %}" alt="" />
+      </button>
+      <ul class="sub-menu move-out">
+        <li><a href="#men" >Homens</a></li>
+        <li><a href="#categorys" >Destaques</a></li>
+        <li><a href="#news" >Novidades</a></li>
+        <li><a href="#footer" >Wear ID</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="swiper" class="wrapper">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="{% static 'assets/camisas/CamisaBasicaBranca.jpg' %}" alt="logo" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="{% static 'assets/camisas/CamisaBasicaVerdeClaro.webp' %}" alt="logo" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="{% static 'assets/camisas/CamisaBasicaVermelha.webp' %}" alt="logo" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  
+    <section id="categorys" class="wrapper">
+      <div class="category">
+        <div>
+          <img src="{% static 'assets/camisa-wearId.jpg' %}" alt="" />
+        </div>
+        <strong>Camisetas</strong>
+      </div>
+      <div class="category">
+        <div>
+          <img src="{% static 'assets/chinela-wearId.jpg' %}" alt="" />
+        </div>
+        <strong>Chinelos</strong>
+      </div>
+      <div class="category">
+        <div>
+          <img src="{% static 'assets/sapato2.jpg' %}" alt="" />
+        </div>
+        <strong>T&ecirc;nis</strong>
+      </div>
+      <div class="category">
+        <div>
+          <img src="{% static 'assets/mochila-wearId.jpg' %}" alt="" />
+        </div>
+        <strong>Mochilas</strong>
+      </div>
+      <div class="category">
+        <div>
+          <img src="{% static 'assets/Bones.jpg' %}" alt="" />
+        </div>
+        <strong>Bon&eacute;s</strong>
+      </div>
+    </section>
+  
+    <div class="divider wrapper">
+      <p>T&aacute; bombando!</p>
+      <div></div>
+    </div>
+  
+    <section id="men" class="wrapper news">
+      <div class="new">
+        <img src="{% static 'assets/camisas/CamisaPoloAzul.jpg' %}" alt="" />
+        <div class="box-new">
+          <p>Camisas B&aacute;sicas</p>
+          <button>confira</button>
+        </div>
+      </div>
+      <div class="new">
+        <img src="{% static 'assets/camisas/CamisaPoloVerde.jpg' %}" alt="" />
+        <div class="box-new">
+          <p>Camisas Polo</p>
+          <button>confira</button>
+        </div>
+      </div>
+    </section>
+  
+    <div id="news" class="divider wrapper">
+      <p>Novidades</p>
+      <div></div>
+    </div>
+  
+    <section class="wrapper news">
+      <div class="new">
+        <img src="{% static 'assets/camisa-gato.svg' %}" alt="" />
+        <div class="box-new">
+          <p>Camisas de memes? TEMOS!</p>
+        </div>
+      </div>
+      <div class="new box-img">
+        <img src="{% static 'assets/camisa-bart.png' %}" alt="" />
+        <div class="box-new">
+          <p>Camisas de anima&ccedil;&otilde;es</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer id="footer">
+    <div class="wrapper">
+      <div class="social-links">
+        <strong>Wear ID</strong>
+        <p>
+          Descubra sua identidade com estilo na WEAR ID - O lugar perfeito para vestir quem voc&ecirc; realmente &eacute;!
+        </p>
+        <div class="links">
+          <a href="https://pt-br.facebook.com/" target="_blank">
+            <img src="{% static 'assets/icons/facebook.svg' %}" alt="" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="{% static 'assets/icons/twitter.svg' %}" alt="" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="{% static 'assets/icons/instagram.svg' %}" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="additional-information">
+        <div class="information-content">
+          <strong>About</strong>
+          <div class="box-links">
+            <a href="#">About US</a>
+            <a href="#">Feature</a>
+            <a href="#">News</a>
+            <a href="#">Menu</a>
+          </div>
+        </div>
+        <div class="information-content">
+          <strong>About</strong>
+          <div class="box-links">
+            <a href="#">About US</a>
+            <a href="#">Feature</a>
+            <a href="#">News</a>
+            <a href="#">Menu</a>
+          </div>
+        </div>
+        <div class="information-content">
+          <strong>About</strong>
+          <div class="box-links">
+            <a href="#">About US</a>
+            <a href="#">Feature</a>
+            <a href="#">News</a>
+            <a href="#">Menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="newsletters">
+        <strong>Subscribe on our destination review newsletters</strong>
+        <div class="input">
+          <div class="box-input">
+            <img src="{% static 'assets/icons/email.svg' %}" alt="" />
+            <input id="newsletters" placeholder="Digite seu email" type="text" />
+          </div>
+          <button id="sendNewsletters">
+            <img src="{% static 'assets/icons/arrow-right.svg' %}" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script charset="{% static 'UTF-8' %}" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>  
